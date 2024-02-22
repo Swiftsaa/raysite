@@ -1,0 +1,44 @@
+:root {
+    --yellow1: rgb(222,219,53);
+    --yellow2: rgb(219,110,0);
+    --yellow3: rgb(221,149,1);
+}
+
+body {
+    text-align: center;
+    margin-top: 10%;
+    font-family: cursive;
+    background-color: var(--yellow1);
+    color: var(--yellow2);
+}
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    background-color: var(--yellow3);
+    color: var(--yellow1);
+    transition: .5s;
+}
+
+button:hover {
+    background-color: var(--yellow2);
+    color: var(--yellow1);
+    box-shadow: 5px 5px 5px var(--yellow3);
+}
+
+@keyframes updown {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
+}
+
+h1, .advice {
+    text-shadow: 0px 0px 10px;
+    animation: updown 5s infinite;;
+}
+
+.cool {
+    padding: 5px;
+}
